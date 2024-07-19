@@ -44,7 +44,7 @@
 // export default Chat;
 
 import React, { useState, useEffect } from 'react';
-
+import style from "./Chat.module.css"
 const Chat = ({ username, roomName }) => {
     const [message, setMessage] = useState('');
     const [chatLog, setChatLog] = useState([]);
@@ -74,16 +74,17 @@ const Chat = ({ username, roomName }) => {
     };
 
     return (
-        <div>
-            <div>
+        <div className={style.chatcontainer}>
+ 
+            <div className={style.messagescontainer}>
                 {chatLog.map((msg, index) => <div key={index}>{msg}</div>)}
             </div>
-            <input
+            <input className={style.messageinput}
                 type="text"
                 value={message}
                 onChange={e => setMessage(e.target.value)}
             />
-            <button onClick={sendMessage}>Send</button>
+            <button className={style.sendbutton} onClick={sendMessage}>Send</button>
         </div>
     );
 };
