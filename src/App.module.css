@@ -1,16 +1,22 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 /* App container styling */
-.app-container {
+.appcontainer {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #f0f2f5;
+    background: #a2d2ff;
     font-family: Arial, sans-serif;
 }
 
 /* Join room container styling */
-.join-room-container {
-    background: white;
+.joiroomcontainer {
+    background: #bde0fe;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -20,12 +26,22 @@
 }
 
 /* Header styling */
-.join-room-container h2 {
+h2 {
     margin-bottom: 1.5rem;
+    text-align: center;
+    
 }
-
+p{
+    text-align: left;
+    margin-bottom: 1rem;
+} 
+ol{
+    text-align: left;
+    margin-bottom: 1rem;
+    
+}
 /* Input field styling */
-.input-field {
+.inputfield {
     width: 100%;
     padding: 0.5rem;
     margin: 0.5rem 0;
@@ -35,7 +51,7 @@
 }
 
 /* Join button styling */
-.join-button {
+.joinbutton {
     background: #007bff;
     color: white;
     padding: 0.75rem 1.5rem;
@@ -45,22 +61,22 @@
     font-size: 1rem;
 }
 
-.join-button:hover {
+.joinbutton:hover {
     background: #0056b3;
 }
 
 /* Responsive design */
 @media (max-width: 600px) {
-    .join-room-container {
+    .joinroomcontainer {
         width: 90%;
         padding: 1rem;
     }
 
-    .input-field {
+    .inputfield {
         font-size: 0.9rem;
     }
 
-    .join-button {
+    .joinbutton {
         padding: 0.5rem 1rem;
         font-size: 0.9rem;
     }
